@@ -41,3 +41,8 @@ function showResult(score, playerChoice, computerChoice) {
   hands.innerText = `👱 ${playerChoice} vs 🤖 ${computerChoice}`
 }
 
+function onClickRPS(playerChoice) {
+  const computerChoice = getComputerChoice()
+  const score = getResult(playerChoice.value, computerChoice)
+  showResult(score, playerChoice.value, computerChoice) 
+}
