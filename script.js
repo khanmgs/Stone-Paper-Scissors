@@ -46,3 +46,14 @@ function onClickRPS(playerChoice) {
   const score = getResult(playerChoice.value, computerChoice)
   showResult(score, playerChoice.value, computerChoice) 
 }
+
+
+function endGame() {
+  let playerScore = document.getElementById('player-score')
+  let hands = document.getElementById('hands')
+  let result = document.getElementById('result')
+  playerScore.innerText = ''
+  hands.innerText = ''
+  result.innerText = ''
+  
+}
