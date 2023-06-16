@@ -57,3 +57,16 @@ function endGame() {
   result.innerText = ''
   
 }
+
+function playGame() {
+  let buttons =  document.querySelectorAll('.rpsButton')
+  
+ 
+  buttons.forEach(button => {
+    button.onclick = () => onClickRPS(button)
+  })
+  endGameButton = document.getElementById('endGameButton')
+  endGameButton.onclick = () => endGame()
+}
+
+playGame()
